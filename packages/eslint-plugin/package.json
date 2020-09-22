@@ -1,0 +1,29 @@
+{
+  "name": "@reskript/eslint-plugin",
+  "version": "1.0.0-beta.4",
+  "main": "index.js",
+  "license": "MIT",
+  "files": [
+    "rules",
+    "index.js",
+    "utils.js"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.com"
+  },
+  "scripts": {
+    "build": "echo 'No build in @reskript/eslint-config'",
+    "lint": "eslint rules index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "builtins": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^7.9.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "jest": "^26.4.2"
+  }
+}

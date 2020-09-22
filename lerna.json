@@ -1,0 +1,21 @@
+{
+    "packages": [
+      "packages/*"
+    ],
+    "version": "independent",
+    "npmClient": "yarn",
+    "useWorkspaces": true,
+    "command": {
+      "version": {
+        "allowBranch": "master",
+        "ignoreChanges": [
+          "**/*.md",
+          "**/example/**",
+          "**/__tests__/**",
+          "**/.eslintrc.js",
+          "**/jest.config.js",
+          "**/tsconfig.json"
+        ]
+      }
+    }
+  }

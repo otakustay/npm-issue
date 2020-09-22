@@ -1,0 +1,78 @@
+{
+  "name": "@reskript/config-webpack",
+  "version": "1.0.0-beta.8",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.com"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc && cp -r src/assets dist",
+    "lint": "eslint src",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/less": "^3.0.1",
+    "@types/lodash": "^4.14.161",
+    "@types/mini-css-extract-plugin": "^0.9.1",
+    "@types/stylelint": "^9.10.1",
+    "@types/stylelint-webpack-plugin": "^2.1.0",
+    "@types/webpack-merge": "^4.1.5",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.4.0",
+    "typescript": "^4.0.2",
+    "webpack": "^5.0.0-beta.30"
+  },
+  "dependencies": {
+    "@babel/core": "^7.11.6",
+    "@reskript/config-babel": "^1.0.0-beta.6",
+    "@reskript/config-lint": "^1.0.0-beta.6",
+    "@reskript/core": "^1.0.0-beta.5",
+    "@reskript/settings": "^1.0.0-beta.7",
+    "@types/webpack": "^4.41.22",
+    "autoprefixer": "^9.8.6",
+    "babel-loader": "^8.1.0",
+    "case-sensitive-paths-webpack-plugin": "^2.3.0",
+    "chalk": "^4.1.0",
+    "change-case": "^4.1.1",
+    "classnames": "^2.2.6",
+    "classnames-loader": "^2.1.0",
+    "copy-webpack-plugin": "^6.1.1",
+    "core-js": "^3.6.5",
+    "css-loader": "^4.3.0",
+    "cssnano": "^4.1.10",
+    "eslint-loader": "^4.0.2",
+    "file-loader": "^6.1.0",
+    "find-up": "^5.0.0",
+    "hasha": "^5.2.0",
+    "html-webpack-plugin": "^4.5.0",
+    "less": "3.9.0",
+    "less-loader": "^7.0.1",
+    "less-plugin-functions": "^1.0.0",
+    "less-plugin-npm-import": "^2.1.0",
+    "lodash": "^4.17.20",
+    "mini-css-extract-plugin": "^0.11.2",
+    "postcss": "^7.0.32",
+    "postcss-loader": "^4.0.2",
+    "postcss-scopify": "^0.1.9",
+    "regenerator-runtime": "^0.13.7",
+    "resolve": "^1.17.0",
+    "style-loader": "^1.2.1",
+    "style-resources-loader": "^1.3.3",
+    "stylelint-webpack-plugin": "^2.1.0",
+    "unixify": "^1.0.0",
+    "url-loader": "^4.1.0",
+    "webpack-merge": "^5.1.4",
+    "worker-loader": "^3.0.2"
+  },
+  "peerDependencies": {
+    "eslint": "6.x || 7.x",
+    "stylelint": "13.x",
+    "typescript": "4.x",
+    "webpack": "^5.0.0-beta.30"
+  }
+}

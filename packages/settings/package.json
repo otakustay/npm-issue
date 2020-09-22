@@ -1,0 +1,34 @@
+{
+  "name": "@reskript/settings",
+  "version": "1.0.0-beta.7",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.com"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "lint": "eslint src",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "eslint": "^7.9.0",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.4.0",
+    "typescript": "^4.0.2"
+  },
+  "dependencies": {
+    "@reskript/core": "^1.0.0-beta.5",
+    "@types/webpack": "^4.41.22",
+    "@types/webpack-dev-server": "^3.11.0",
+    "chokidar": "^3.4.2",
+    "hasha": "^5.2.0",
+    "lodash": "^4.17.20",
+    "schema-utils": "^2.7.1",
+    "stealthy-require": "^1.1.1"
+  }
+}
